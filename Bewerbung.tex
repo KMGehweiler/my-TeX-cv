@@ -1,0 +1,481 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+
+%----------------------------------------------------------------------------------------
+%	FONT
+%----------------------------------------------------------------------------------------
+\usepackage[T1]{fontenc}
+
+\usepackage{fontspec} % For loading fonts
+%\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+\usepackage[11pt]{moresize} %enables \HUGE
+
+%----------------------------------------------------------------------------------------
+%	LAYOUT
+%----------------------------------------------------------------------------------------
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be 
+
+%\usepackage{fullpage}
+% To reduce the height of the top margin uncomment: 
+%\addtolength{\voffset}{-1.3cm}
+
+\usepackage[left=2cm,right=2cm,top=1cm,bottom=0cm,includeheadfoot]{geometry}
+
+\usepackage{multirow}
+
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\rc\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%\renewcommand{\arraystretch}{0.9}
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing*{\section}{0pt}{1.2\baselineskip}{0.5\baselineskip}
+
+\titleformat{\subsection}{\Large\scshape\raggedright}{}{0em}{}[] % Text formatting of sections
+\titlespacing*{\subsection}{0pt}{3\baselineskip}{1.5\baselineskip}
+
+\usepackage{enumitem}
+\setlist{leftmargin=*, noitemsep}
+
+\usepackage[rflt]{floatflt}
+
+%----------------------------------------------------------------------------------------
+%	COLOUR
+%----------------------------------------------------------------------------------------
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0,0} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\definecolor{starblue}{RGB}{3,124,181}
+\DeclareTextFontCommand{\emph}{\bfseries\color{starblue}}
+
+%----------------------------------------------------------------------------------------
+%	MISC
+%----------------------------------------------------------------------------------------
+\usepackage{picins} % Bilder positionieren
+\usepackage{booktabs}
+\usepackage{hanging}
+\usepackage{lipsum}
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+\usepackage{pdfpages}
+
+%----------------------------------------------------------------------------------------
+%	COMMANDS
+%----------------------------------------------------------------------------------------
+\newcommand{\rc}[1]{\multirow{2}{\linewidth}{\raggedleft #1}}
+\newcommand{\ic}[1]{\multirow{}{\linewidth}{\begin{tabular}{@{}c@{}}
+			#1
+		\end{tabular}}}
+		
+\newcommand{\tabitem}{\footnotesize\hangindent=1.1em\hangafter=1\hspace{0.7em}\llap{\textbullet}\hspace{0.4em}}
+
+
+%----------------------------------------------------------------------------------------
+%	-------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+	
+\pagestyle{empty} % Removes page numbering
+
+	
+\begin{center}
+\vspace*{3em}
+\textsc{\HUGE Bewerbung}\\[2em]
+\textsc{\huge im Bereich Datenschutz}\\[5em]
+
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\HRule \\[3em]
+
+\includegraphics[width=0.6\linewidth]{Gehweiler_Karin} 
+\vspace{3em}
+
+\vspace{6em}
+\LARGE
+\textsc{Karin M Gehweiler}\\ \vspace{2em}
+
+\large
+Brühlweg 4\\
+88499 Riedlingen\\
+\vspace{1em}
+Telefon: 0173 267 23 16\\
+eMail: karin.gehweiler@gmail.com\\
+
+\vspace{3em}
+\hrule 
+\vspace{1em}
+\Large
+\textsc{Inhalt}\\
+\vspace{0.5em}
+\large
+\textbullet Lebenslauf \textbullet Empfehlungsschreiben
+\textbullet Notenübersicht \textbullet Diplom-Zeugnis
+
+
+
+
+\end{center}
+\newpage
+
+
+%----------------------------------------------------------------------------------------
+%	-------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+
+
+
+\pagestyle{empty} % Removes page numbering
+
+%%----------------------------------------------------------------------------------------
+%%	ANSCHREIBEN
+%%----------------------------------------------------------------------------------------
+%
+%\par{\Huge \textsc{Karin M Gehweiler}\par}
+%\hspace{40pt} Brühlweg 4; 88499 Riedlingen | 0173-2672316 | karin.gehweiler@gmail.com\\
+%
+%
+%\vspace{50pt}
+%Audi AG\\
+%85045 Ingolstadt
+%\vspace{20pt}
+%
+%{\hfill31.07.2014}
+%
+%
+%\subsection{Bewerbung als Datenanalyst}
+%
+%Sehr geehrte Damen und Herren, 
+%
+%\vspace{10pt}
+%hiermit bewerbe ich mich auf eine Stelle als Datenanalyst in Ihrem Unternehmen. 
+%
+%Ich habe letztes Jahr mein Studium "Diplom-Mathematik" an der Universität Augsburg abgeschlossen und glaube, dass gerade in der Automobil-Branche in jedem Schritt von der Entwicklung bis zum Verkauf einige Daten anfallen, welche sehr aufschlussreich sind, um die Produktion zu sichern und zu verbessern.
+%
+%Ich habe großen Spaß an der  Arbeit mit Daten  und deren Visualisierung  und konnte schon einige
+%Erfahrungen  in  diesem Bereich  sammeln.  Hierzu  gehören  zahlreiche  praktische  Arbeiten  mit
+%Datensätzen und statistischen Verfahren während meines Studiums,  meiner Mitarbeit am R-Paket
+%„extracat“ (statische Parallel-Koordinaten-Plots für kategorielle Daten) und meiner Mitarbeit an der
+%Überarbeitung  der  mobilen  Version  des  Risiko-Visualisierungstools  „Riskroom“  für  Zürich
+%Versicherungen bei anfema GmbH.
+%
+%
+%Zu mir:
+%
+%Mein Profil  ist  vielseitig. Einerseits biete ich  durch mein Studium eine fundierte Basis  im Bereich
+%Statistik und Datenanalyse. Andererseits lehrten mich meine verschiedenen Tätigkeiten in Nebenjobs
+%und Ehrenämtern die Wichtigkeit von Gewissenhaftigkeit, zielorientiertem Handeln und nicht zuletzt
+%die Arbeit im Team. Darüber hinaus versteht es sich für mich als selbstverständlich, stets neues lernen
+%zu wollen und mich weiterzubilden.
+%
+%Ich  glaube,  dass Sie  sich  ein  umfassendes  Bild  von  mir  durch  meinen  Lebenslauf,  meine
+%Notenübersicht und den beigelegten Empfehlungsschreiben machen können. 
+%
+%Falls Sie noch weitere Fragen haben oder  einen Termin für  ein Vorstellungsgespräch vereinbaren
+%möchten, erreichen Sie mich am besten per Mail unter karin.gehweiler@gmail.com. 
+%
+%
+%Ich freue mich auf Ihre Antwort.
+%
+%\vspace{20pt}
+%Mit freundlichen Grüßen 
+%
+%\vspace{20pt}
+%\includegraphics[width=0.33\linewidth]{unterschrift_03}
+%
+%Karin M Gehweiler 
+%
+%
+%\newpage
+
+
+
+
+%\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------}
+%\parpic[rf]{\includegraphics[width=0.33\linewidth]{Gehweiler_Karin}}
+
+
+\par{\Huge \textsc{Karin M \\Gehweiler}\bigskip\par} % Your name
+
+
+%\vspace{10pt}
+\section{Persönliche Daten}
+
+\begin{tabular}{R{0.2\linewidth}p{0.76\linewidth}}
+\textsc{Adresse:} & Brühlweg 4, 88499 Riedlingen \\
+\textsc{eMail:} &\href{mailto:karin.gehweiler@gmail.com}{karin.gehweiler@gmail.com}\\
+\textsc{Telefon:} & 0173 267 23 16\\
+\textsc{Geburtstag:} & 23. Dezember 1985\\
+\textsc{Familienstand:} & ledig\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Berufserfahrung}
+
+\begin{tabular}{R{0.2\linewidth}|p{0.755\linewidth}}
+
+\rc{09/2014 - jetzt} & \textsc{comforts counsulting GmbH} \\&\emph{Festangestellt} \\
+&   \tabitem Projektarbeit: Überarbeitung und Optimierung OTRS-HelpDesk \\
+
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+
+\rc{10/2013 - 08/2014} & \textsc{elan GmbH} \& \textsc{Radke Imbissbetrieb} \\&\emph{Reinigungs- und Verkaufskraft} \\ 
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\rc{04/2013 - 05/2013} & \textsc{anfema GmbH} \\&\emph{Praktikantin} \\
+&   \tabitem Implementierung einer automatisierten Übersetzung und Code-CleanUp für ein Web-Portal \\
+&   \tabitem Beratung und Kontroll-Rechnungen für die Weiterentwicklung einer App zur Visualisierung statistischer Daten \\
+
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\rc{07/2010 - 03/2013} & \textsc{Universität Augsburg - Lehrstuhl für rechnerorientierte Statistik und Datenanalyse} \\&\emph{Studentische Hilfskraft (Sekretariat)}\\
+& 	\tabitem Buchhaltung und generelle organisatorische Aufgaben am Lehrstuhl\\
+&	\tabitem Organisation eines Workshops zum Thema R als berufliche Weiterbildung\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\rc{09/2006 - 06/2010} & \textsc{Universität Augsburg - Rechenzentrum} \\&\emph{Studentische Hilfskraft (Management \& Support)}\\
+& 	\tabitem Support für Studenten bzgl. der universitären IT-Infrastruktur (z.B. WLAN, Computerräume, Drucken, ...)\\
+&	\tabitem Support für Studenten bei Problemen mit ihrem Notebooks (z.B. Virenbefall, ...)\\
+&	\tabitem Wartung und Pflege der Computerräume des Rechenzentrums\\
+
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\rc{SS 2010 - WS 2012} & \textsc{Universität Augsburg - Institut für Informatik} \\&\emph{Studentische Hilfskraft (Administration der Lehrevalation)}\\
+& 	\tabitem Einpflegen der jeweils aktuellen Veranstaltungs-Daten\\
+&	\tabitem Koordination des Ablaufs der Evaluation\\
+	
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Fachkenntnisse}
+
+
+\begin{tabular}{R{0.15\linewidth}p{0.25\linewidth}p{0.075\linewidth}R{0.15\linewidth}L{0.25\linewidth}}
+	\multicolumn{2}{c}{Programmiersprachen \& Programme} & & \multicolumn{2}{c}{Sprachen} \\
+	\cline{1-2} \cline{4-5} \\
+	R: & \includegraphics[width=5em]{4stars} && \textsc{Deutsch:} & Muttersprache \\
+	\LaTeX: & \includegraphics[width=5em]{4stars} && \textsc{Englisch:} & Fliesend\\
+	Office: &\includegraphics[width=5em]{3stars} && \textsc{Französisch:} & Grundkenntnisse \\
+	HTML/CSS: & \includegraphics[width=5em]{3stars}&&&\\
+	Weitere: & SQL, Django, Java&&&\\ %, CMS (Fiona), Wordpress \\
+\end{tabular}
+%\hfill
+%\begin{tabular}{}
+	%\multicolumn{2}{c}{Sprachen}\\
+	%\cline{1-2}\\
+	%\textsc{Deutsch:} & Muttersprache \\
+	%\textsc{Englisch:} & Fliesend\\
+	%\textsc{Französisch:} & Grundkenntnisse\\
+	%\\ \\ \\ \\
+%\end{tabular}
+		
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Bildung}
+
+\begin{tabular}{R{0.2\linewidth}p{0.76\linewidth}}
+2006 - 2013 & \textsc{Universität Augsburg}\\
+& \emph{Mathematik mit Nebenfach Informatik}\\
+& Vertiefung Statistik \& Datenanalyse\\
+&\normalsize \textsc{Abschluss}: \emph{Diplom}, Note 2,8\\ % \hyperlink{grds}{\hfill | \footnotesize Detaillierte Notenliste}\\ %\hyperlink{dzeugnis}{~| \footnotesize Zeugnis}\\
+&\\
+%------------------------------------------------
+
+2005 - 2006 & \textsc{Universität Augsburg}\\
+& Mathematik auf Gymnasiallehramt mit Nebenfach Physik\\
+&\\
+%------------------------------------------------
+
+\textsc{2005} & \textsc{Kreisgymnasium Riedlingen}\\
+& \textsc{Abschluss}: Allgemeine Hochschulreife, Note 2,1 \\ %\hyperlink{azeugnis}{\hfill| \footnotesize Zeugnis}\\
+&\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SCHOLARSHIPS AND ADDITIONAL INFO
+%----------------------------------------------------------------------------------------
+
+%\section{Scholarships and Certificates}
+%
+%\begin{tabular}{rl}
+%\textsc{Sept.} 2012 & Faculty of Science Masters Scholarship \footnotesize(\$30,000)\normalsize\\
+%
+%\textsc{June} 2010 & {\textsc{Gmat}\textregistered}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular}: 730 (\textsc{q:50;v:39}) 96\textsuperscript{th} percentile; \textsc{awa}: 6.0/6.0 (89\textsuperscript{th} percentile)
+%\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Persönliches Engagement}
+
+\begin{tabular}{R{0.2\linewidth}|p{0.75\linewidth}}
+	\rc{10/2011 - 03/2013} & \textsc{Universität Augsburg} \\&\emph{Mitglied im Ältestenrat} \\
+	& \tabitem Beratung, Schlichtung und Kontrollinstanz für alle Organe der studentischen Mitbestimmung\\
+	\multicolumn{2}{c}{} \\
+	
+	%------------------------------------------------
+	
+	\rc{10/2010 - 09/2011} & \textsc{Universität Augsburg} \\&\emph{Vizepräsidentin im Studentischen Konvent} \\
+	&   \tabitem Organisation und Protokollierung der Sitzungen \\
+	\multicolumn{2}{c}{} \\
+	
+	%------------------------------------------------
+	
+	\rc{02/2006 - 03/2013} & \textsc{Universität Augsburg}\\&\emph{Mitglied in der Fachschaft Mathematik}\\
+	& 	\tabitem Anlaufstelle für studentische Belange aller Art\\
+	&	\tabitem Organisation und Durchführung von sozialen und studiumsrelevanten Maßnahmen und Veranstaltungen\\
+	\multicolumn{2}{c}{} \\
+	
+	%------------------------------------------------
+	
+	\rc{10/2008 - 05/2009} & \textsc{Universität Augsburg}\\&\emph{Fachschaftssprecherin}\\
+	&	\tabitem Entscheidungen über materielle und personelle Maßnahmen zur Verbesserung der Studiensituation aus Studienbetragsgeldern\\
+	&	\tabitem Leitung der Fachschaft Mathematik\\
+	&	\tabitem Mitbestimmung auf Instituts- \& Fakultätsebene\\
+	&	\tabitem Organisation zweier internationaler Studierendenkonferenzen\\
+	
+\end{tabular}
+
+
+%%----------------------------------------------------------------------------------------
+%%	COMPUTER SKILLS 
+%%----------------------------------------------------------------------------------------
+%
+%\section{Computer-Kenntnisse}
+%
+%\begin{tabular}{rl}
+%Grundkenntnisse: & \textsc{}, my\textsc{sql}, \textsc{html}, Access, \textsc{Linux}, ubuntu, \\
+%%
+%%Fortgeschritten: & \textsc{R}, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular}\\
+%\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS AND ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\section{Weitere Informationen}
+
+\begin{tabular}{R{0.2\linewidth}p{0.76\linewidth}}
+	\textsc{Interessen:} & Go (spielen \& Kommentieren von Partien), Handarbeiten, Leitung eines Buchklubs\\
+	&\\
+	\textsc{Eigenschaften:} & zuverlässig und gewissenhaft mit ausgeprägter Organisationsstärke, Lösungsorientierung und hoher Lernbereitschaft
+\end{tabular}
+\vspace{1em}
+{\parpic[r]{\includegraphics[width=0.2\linewidth]{unterschrift_03}}
+\vspace{2em}
+\hfill \today}
+%----------------------------------------------------------------------------------------
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	EMPFEHLUNGEN
+%----------------------------------------------------------------------------------------
+
+\addcontentsline{toc}{section}{Empfehlungsschreiben Unwin}
+\includepdf[scale=1]{Empfehlung_Unwin.pdf}
+
+\addcontentsline{toc}{section}{Empfehlungsschreiben Jilg}
+\includepdf[scale=1]{Empfehlung_Jilg.pdf}
+
+%----------------------------------------------------------------------------------------
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	GRADE TABLES
+%----------------------------------------------------------------------------------------
+\vspace*{3em}
+\par{\centering\Large \hypertarget{grds}{\textsc{Diplom-Mathematik}\\mit Nebenfach Informatik}\par}
+\vspace{0.5em}\LARGE{\centering \textsc{Notenübersicht Hauptstudium}\par}\normalsize
+\vspace{4em}
+\begin{center}\large
+\begin{tabular}{clc}
+\multicolumn{1}{c}{\textsc{Typ}} & \textsc{Veranstaltung}&\textsc{Note}\\ \hline
+\vspace{2pt}\\
+S& Stochastische Prozesse& 1,3\\
+V& Statistik 3& 1,3\\
+V& Grafische Datenanalyse& 1,3\\
+S& Seminar zu Algebra und Zahlentheorie& 1,7\\
+V& Datenbanken& 1,7\\
+S& Data Technologies& 1,7 \\
+S& Charakteristische Klassen& 1,7\\
+V& Datenstrukturen& 2\\
+V& Statistik 1& 3,7\\
+V& Gewöhnliche Differentialgleichungen& 3,7\\
+V& Algebra& 3,7\\
+V& Quaternionen und Oktaven& 4\\
+V& Optimierung 2& 4\\
+V& Informatik 3& 4\\	
+%\\\cline{2-3}
+%&\textsc{gesamt}&\textbf{8.0}
+\end{tabular}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+%	DIPLOMSZEUGNISS
+%----------------------------------------------------------------------------------------
+
+\addcontentsline{toc}{section}{Diplom-Zeugnis}
+\includepdf[scale=1, pages={1-2}]{Diplomszeugnis.pdf}
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
